@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.landing {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  padding: 0 0.5rem;
+}
+
+.distortion {
+  height: 600px;
+  width: 600px;
+}
+
+.distortion canvas {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  align-self: center;
+}
+
+.intro h2 {
+  font-size: 3rem;
+}
+
+.intro p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .landing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .distortion {
+    height: 300px;
+    width: 600px;
+  }
+
+  canvas {
+    width: 370px !important;
+    height: 600px !important;
+    object-fit: contain;
+  }
+}

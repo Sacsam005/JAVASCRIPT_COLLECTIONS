@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>events</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        html {
+            background-color: aliceblue;
+        }
+        body {
+            font-family: "OFL sorts Mill Goudy";
+            font-variant: small-caps;
+            width: 100%;
+        }
+        .container {
+            display: inline-block;
+            text-align: center;            
+        }
+        .btn {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Types of Events in javascript</h1>
+            <div class="button-container">
+                <button class = "btn btn-primary" onclick="alert('This is an alert!!!')">Onclick alert</button>
+            </div>
+            <div>       
+                <button class = "btn btn-success" onclick="callFunction()">Function calling event</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" id="secondOpt">Inline Event</button>
+            </div>
+            <div>
+                <button class="btn-outline-secondary" id = "nextOpt">Event Listener</button>
+            </div>
+    </div>
+
+
+<script>
+    //2nd way
+    function callFunction() {
+        var text = document.querySelector('.btn.btn-success');
+        text.innerHTML='most common way to call an event';
+        console.log(text);
+    }
+
+    //3rd way
+    const secondOpt = document.getElementById('secondOpt');
+    secondOpt.onclick = function(){
+        alert('3rd way to call an event!!!');
+    } 
+
+    //4th way
+    const nextOpt = document.querySelector('#nextOpt');
+    nextOpt.addEventListener('click', function(){
+        alert('listening to an event using callback function');
+    })
+    
+
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
