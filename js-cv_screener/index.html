@@ -8,18 +8,26 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>alarn clock</title>
+    <title>CV screener</title>
 </head>
 
-<body onload="updateClock(); setInterval('updateClock()', 1000)">
-    <div class="text-center my-5 p-10">
-        <div id="clock">
-            <div></div>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h1>Browse Candidate's profiles</h1>
+                <div id="image"></div>
+                <br>
+                <div id="profile"></div>
+                <hr>
+                <button class="btn-primary btn-block" id="next">Next</button>
+            </div>
         </div>
     </div>
 
 
-    <script src="chal.js"></script>
+
+    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
