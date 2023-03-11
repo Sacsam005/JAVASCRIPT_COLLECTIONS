@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "7cf8b678-4664-40c2-9ae6-898c3987c5a4",
+		"name": "CHRISTUS Central APIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ext central service",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "d50eeee0-7fc0-4b98-8ad9-9dc28408ffa6",
+						"type": "default"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "jB8iA3hL5kW8dP8dS1hK7mF5eD8sH0rE4gF7oB2wN4bP8jA4gN",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer cU1kdDNtQU9EQVFpcWQ3YmtremQ2UT09X3lHKzhML0lwUlFyUG81eUVySG1TeDlkUHI4TzZTTnZwYXJTV2QrN0VwT1I2L3RFR3pBZXdFR3BFZGdVWmVFYitPZnRRa0xqR1k0SG1LUURwSlN2OG83S1NBQ1BzdGsvWGxNNWNxQ0F2RkRsWTJaRE5XNUM1c2VocjJrZ2JPVWFM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://apiservices.christushealth.org:444/interop/ext-prod/api/ChristusCentral/posts/categories?id=2&take=7",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"christushealth",
+						"org"
+					],
+					"port": "444",
+					"path": [
+						"interop",
+						"ext-prod",
+						"api",
+						"ChristusCentral",
+						"posts",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "take",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int central service",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "ae20ed54-e4f6-4e1e-bf58-9bb7f3c35ce5",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer cU1kdDNtQU9EQVFpcWQ3YmtremQ2UT09X3lHKzhML0lwUlFyUG81eUVySG1TeDlkUHI4TzZTTnZwYXJTV2QrN0VwT1I2L3RFR3pBZXdFR3BFZGdVWmVFYitPZnRRa0xqR1k0SG1LUURwSlN2OG83S1NBQ1BzdGsvWGxNNWNxQ0F2RkRsWTJaRE5XNUM1c2VocjJrZ2JPVWFM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://apiservices.echristus.net/interop/internal-prod/api/ChristusCentral/posts/categories?id=2&take=7",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"echristus",
+						"net"
+					],
+					"path": [
+						"interop",
+						"internal-prod",
+						"api",
+						"ChristusCentral",
+						"posts",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "take",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://christuscentral.christushealth.org/v1/posts/categories?id=2&take=7",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer cU1kdDNtQU9EQVFpcWQ3YmtremQ2UT09X3lHKzhML0lwUlFyUG81eUVySG1TeDlkUHI4TzZTTnZwYXJTV2QrN0VwT1I2L3RFR3pBZXdFR3BFZGdVWmVFYitPZnRRa0xqR1k0SG1LUURwSlN2OG83S1NBQ1BzdGsvWGxNNWNxQ0F2RkRsWTJaRE5XNUM1c2VocjJrZ2JPVWFM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://christuscentral.christushealth.org/v1/posts/categories?id=2&take=7",
+					"protocol": "https",
+					"host": [
+						"christuscentral",
+						"christushealth",
+						"org"
+					],
+					"path": [
+						"v1",
+						"posts",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "take",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ext central token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "d50eeee0-7fc0-4b98-8ad9-9dc28408ffa6",
+						"type": "default"
+					},
+					{
+						"key": "x-ibm-client-secret",
+						"value": "jB8iA3hL5kW8dP8dS1hK7mF5eD8sH0rE4gF7oB2wN4bP8jA4gN",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://apiservices.christushealth.org:444/interop/ext-prod/api/ChristusCentral/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"christushealth",
+						"org"
+					],
+					"port": "444",
+					"path": [
+						"interop",
+						"ext-prod",
+						"api",
+						"ChristusCentral",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "int central token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-ibm-client-id",
+						"value": "ae20ed54-e4f6-4e1e-bf58-9bb7f3c35ce5",
+						"type": "default"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://apiservices.echristus.net/interop/internal-prod/api/ChristusCentral/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"apiservices",
+						"echristus",
+						"net"
+					],
+					"path": [
+						"interop",
+						"internal-prod",
+						"api",
+						"ChristusCentral",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://christuscentral.christushealth.org/v1/oauth2/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic ZEFNSHN1aGVWRWlNOE5MeklVN3V6UFhmVGdBdHJRaEI6TlVkR3JZQUxqMHE1RjYyZDczZjZ6ZUZtUWpFSjRoVk8=",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded;charset=UTF-8",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "grant_type=client_credentials"
+				},
+				"url": {
+					"raw": "https://christuscentral.christushealth.org/v1/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"christuscentral",
+						"christushealth",
+						"org"
+					],
+					"path": [
+						"v1",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
