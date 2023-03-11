@@ -1,0 +1,70 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "puma soccer ball size-5",
+          "price": 10.99,
+          "image": { "fields": { "file": { "url": "./img/prod1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "adidas soccer ball size-5",
+          "price": 15.99,
+          "image": { "fields": { "file": { "url": "./img/prod2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "nike soccer ball size-5",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "./img/prod3.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "youth aluminum baseball bat",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "./img/prod4.png" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Genuine MRF cricket bat",
+          "price": 50.99,
+          "image": { "fields": { "file": { "url": "./img/prod5.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "youth football shoes with spikes",
+          "price": 88.99,
+          "image": { "fields": { "file": { "url": "./img/prod6.jpeg" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "cricket practice helmet metal face grill breathable ",
+          "price": 45.99,
+          "image": { "fields": { "file": { "url": "./img/prod7.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "grade-A cricket leather hard ball",
+          "price": 25.99,
+          "image": { "fields": { "file": { "url": "./img/prod8.jpg" } } }
+        }
+      }
+    ]
+  }
+  
+
