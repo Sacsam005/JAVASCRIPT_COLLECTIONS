@@ -22,16 +22,16 @@ function manipulateUserInfo(data) {
       <tr>
         <td>${data[i].id}</td>
         <td>${data[i].name}</td>
-        <td>${data[i].username}</td>
-        <td>${data[i].email}</td>
-        <td>${
-          (data[i].address.street,
-          data[i].address.suite,
-          data[i].address.city.toUpperCase(),
-          data[i].address.zipcode)
-        }</td>
+        <td>${data[i].username.toLowerCase()}</td>
+        <td>${data[i].email.toLowerCase()}</td>
+        <td>${data[i].address.street}, ${data[i].address.suite},
+          ${data[i].address.city.toUpperCase()},
+          ${data[i].address.zipcode}
+        </td>
         <td>${data[i].phone}</td>
-        <td>${data[i].website}</td>
+        <td><a href="${data[i].website}" target="_blank">${
+      data[i].website
+    }</a></td>
         <td><span style="font-weight: 700">${data[i].company.name}:</span> ${
       (data[i].company.catchPhrase, data[i].company.bs)
     }</td>
